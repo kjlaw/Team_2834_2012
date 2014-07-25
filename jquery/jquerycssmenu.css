@@ -1,0 +1,100 @@
+.jquerycssmenu{
+	padding-left: 0px; /*offset of tabs relative to browser left edge*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.jquerycssmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.jquerycssmenu ul li{
+position: relative;
+display: inline;
+float: left;
+}
+
+/*Top level menu link items style*/
+.jquerycssmenu ul li a{
+	display: block;
+	;
+	margin-right: 3px;
+	color: #000;
+	text-decoration: none;
+	background-color: #00579e;
+	background-image: url(../images/button.jpg);
+	background-repeat: repeat;
+	padding-top: 5px;
+	padding-right: 7px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+	width: 90px;
+	margin-left: 16px;
+}
+
+.jquerycssmenu ul li a:hover{
+	background-image: url(../images/buttondark.jpg) /*tab link background during hover state*/;
+	color: #FFF;
+	background-color: #00579e;
+}
+	
+/*1st sub level menu*/
+.jquerycssmenu ul li ul{
+	position: absolute;
+	left: 0;
+	display: block;
+	visibility: hidden;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jquerycssmenu ul li ul li{
+display: list-item;
+float: none;
+}
+
+/* Sub level menu links style */
+.jquerycssmenu ul li ul li a{
+	width: 140px;
+	color: black;
+	background-color: #00579e;
+	background-image: url(../images/button.jpg);
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 16px;
+	padding-top: 4px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	padding-left: 5px;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+}
+
+.jquerycssmenu ul li ul li a:hover{ /*sub menus hover style*/
+	color: #FFF;
+	background-image: url(../images/buttondark.jpg);
+	display: inline-block;
+	background-color: #00579e;
+}
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass{
+position: absolute;
+top: 7px;
+right: 1px;
+}
+
+.rightarrowclass{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
